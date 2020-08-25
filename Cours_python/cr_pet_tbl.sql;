@@ -1,0 +1,155 @@
+    -> 
+    -> ;
+ERROR: 
+Failed to open file 'D:\L3_TDSI_2020emestre1\BDd_tp', error: 2
+mysql> SOURCE D:\L3_TDSI_2020\semestre1\BD\td_tp\TD_SGBD_4_5\l3tdsi\menagerie-db\menagerie-db\cr_pet_tbl.sql;
+ERROR: 
+Unknown command '\L'.
+--------------
+
+Connection id:		84
+Current database:	l3_tdsi
+Current user:		root@localhost
+SSL:			Not in use
+Using delimiter:	;
+Server version:		5.7.24 MySQL Community Server (GPL)
+Protocol version:	10
+Connection:		localhost via TCP/IP
+Server characterset:	latin1
+Db     characterset:	latin1
+Client characterset:	cp850
+Conn.  characterset:	cp850
+TCP port:		3306
+Uptime:			1 hour 20 min 44 sec
+
+Threads: 2  Questions: 606  Slow queries: 0  Opens: 141  Flush tables: 1  Open tables: 128  Queries per second avg: 0.125
+--------------
+
+ERROR: 
+Unknown command '\B'.
+    -> 
+    -> ;
+ERROR: 
+Failed to open file 'D:\L3_TDSI_2020emestre1\BDd_tp', error: 2
+mysql> SOURCE D:/L3_TDSI_2020/semestre1/BD/td_tp/TD_SGBD_4_5/l3tdsi/menagerie-db/menagerie-db/cr_pet_tbl.sql;
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.12 sec)
+
+mysql> show databases;
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| expose             |
+| gestionetudiant    |
+| l3_tdsi            |
+| mysql              |
+| performance_schema |
+| projet             |
+| sys                |
+| tdsi               |
+| tdsi2              |
+| test               |
+| test_wordpress     |
++--------------------+
+12 rows in set (0.00 sec)
+
+mysql> use l3_tdsi;
+Database changed
+mysql> shpow tables;
+ERROR 1064 (42000): Erreur de syntaxe prŠs de 'shpow tables' … la ligne 1
+mysql> show tables;
++-------------------+
+| Tables_in_l3_tdsi |
++-------------------+
+| c_order           |
+| customer          |
+| pet               |
+| product           |
+| product_sell_v    |
+| product_v         |
+| t1                |
++-------------------+
+7 rows in set (0.00 sec)
+
+mysql> SOURCE D:/L3_TDSI_2020/semestre1/BD/td_tp/TD_SGBD_4_5/l3tdsi/menagerie-db/menagerie-db/cr_pet_tbl.sql;
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.25 sec)
+
+mysql> show databases;
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| expose             |
+| gestionetudiant    |
+| l3_tdsi            |
+| mysql              |
+| performance_schema |
+| projet             |
+| sys                |
+| tdsi               |
+| tdsi2              |
+| test               |
+| test_wordpress     |
++--------------------+
+12 rows in set (0.00 sec)
+
+mysql> use l3_tdsi;
+Database changed
+mysql> show tables;
++-------------------+
+| Tables_in_l3_tdsi |
++-------------------+
+| c_order           |
+| customer          |
+| pet               |
+| product           |
+| product_sell_v    |
+| product_v         |
+| t1                |
++-------------------+
+7 rows in set (0.00 sec)
+
+mysql> LOAD DATA LOCAL INFILE '/path/pet.txt' INTO TABLE pet
+    -> ^C
+mysql> LOAD DATA LOCAL INFILE '/D:/L3_TDSI_2020/semestre1/BD/td_tp/TD_SGBD_4_5/l3tdsi/menagerie-db/menagerie-db/pet.txt' INTO TABLE pet LINES TERMINATED BY '\r\n';
+ERROR 2 (HY000): File '\D:\L3_TDSI_2020\semestre1\BD\td_tp\TD_SGBD_4_5\l3tdsi\menagerie-db\menagerie-db\pet.txt' not found (Errcode: 2 - No such file or directory)
+mysql> 
+mysql> 
+mysql> 
+mysql> 
+mysql> 
+mysql> 
+mysql> 
+mysql> 
+mysql> LOAD DATA LOCAL INFILE '/D:/L3_TDSI_2020/semestre1/BD/td_tp/TD_SGBD_4_5/l3tdsi/menagerie-db/menagerie-db/pet.txt' INTO TABLE pet LINES TERMINATED BY '\r\n';
+ERROR 2 (HY000): File '\D:\L3_TDSI_2020\semestre1\BD\td_tp\TD_SGBD_4_5\l3tdsi\menagerie-db\menagerie-db\pet.txt' not found (Errcode: 2 - No such file or directory)
+mysql> LOAD DATA LOCAL INFILE '/D:/L3_TDSI_2020/semestre1/BD/td_tp/TD_SGBD_4_5/l3tdsi/menagerie-db/menagerie-db/pet.txt' INTO TABLE pet LINES TERMINATED BY '\r\n';
+ERROR 2 (HY000): File '\D:\L3_TDSI_2020\semestre1\BD\td_tp\TD_SGBD_4_5\l3tdsi\menagerie-db\menagerie-db\pet.txt' not found (Errcode: 2 - No such file or directory)
+mysql> 
+mysql> 
+mysql> 
+mysql> 
+mysql> LOAD DATA LOCAL INFILE '/D:/L3_TDSI_2020/semestre1/BD/td_tp/TD_SGBD_4_5/l3tdsi/menagerie-db/menagerie-db/pet.txt' INTO TABLE pet LINES TERMINATED BY '\r\n';
+ERROR 2 (HY000): File '\D:\L3_TDSI_2020\semestre1\BD\td_tp\TD_SGBD_4_5\l3tdsi\menagerie-db\menagerie-db\pet.txt' not found (Errcode: 2 - No such file or directory)
+mysql> 
+mysql> 
+mysql> LOAD DATA LOCAL INFILE '/D:/L3_TDSI_2020/semestre1/BD/td_tp/TD_SGBD_4_5/l3tdsi/menagerie-db/menagerie-db/pet.txt' INTO TABLE pet LINES TERMINATED BY '\r\n';
+ERROR 2013 (HY000): Lost connection to MySQL server during query
+mysql> 
+mysql> 
+mysql> 
+mysql> exi*
+    -> ;
+ERROR 2006 (HY000): MySQL server has gone away
+No connection. Trying to reconnect...
+ERROR 2003 (HY000): Can't connect to MySQL server on 'localhost' (10061)
+ERROR: 
+Can't connect to the server
+
+mysql> 
+mysql> 
+mysql> Terminal close -- Sorry, cannot connect to the server to kill query, giving up ...
